@@ -1,0 +1,11 @@
+RECORD										
+Name	EOP									
+Version	5.00.01									
+AddrInfo	656									
+AddrConfig	0									
+AddrAS	-1									
+LenConfig	350									
+LenAS	-1									
+LenMax	686									
+DEFINITION										
+Address	Name	Type	Scaling	Parameter
