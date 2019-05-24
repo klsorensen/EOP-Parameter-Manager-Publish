@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <startup>
+        <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.5.2" />
+    </startup>
+  <Target Name="AfterCompile" Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <Exec Command="&quot;C:\Program Files (x86)\Microsoft SDKs\Windows\v7.1A\Bin\signtool.exe&quot; sign /f &quot;C:\temp\myPFX.pfx&quot; /p &quot;admin&quot; /v &quot;$(ProjectDir)obj\$(ConfigurationName)\$(TargetFileName)&quot;" />
+  </Target>
+</configuration>
